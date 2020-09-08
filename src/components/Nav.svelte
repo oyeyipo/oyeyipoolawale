@@ -5,6 +5,7 @@
 <style>
   .header {
     background-color: bisque;
+    border-bottom: 1px solid hsla(225, 0%, 0%, 0.2);
     height: 7rem;
     width: 100%;
 
@@ -14,7 +15,9 @@
 
   ul {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
   }
 
   li {
@@ -26,7 +29,7 @@
   }
 
   [aria-current] {
-    color: red;
+    color: paleturquoise;
   }
 </style>
 

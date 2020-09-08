@@ -6,4 +6,9 @@
   <title>Oyeyipo Olawale | Software Developer</title>
 </svelte:head>
 
-<h1>Hey 👨‍💻, I am Olawale Oyeyipo</h1>
+<h1>Hey, I'm Olawale Oyeyipo 👨‍💻_</h1>
+
+<p>
+  Software Developer, problem solver. Building quality, scalable and meaningful
+  applications.
+</p>
