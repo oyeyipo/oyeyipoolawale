@@ -6,4 +6,4 @@
   <title>Oyeyipo Olawale | Software Developer</title>
 </svelte:head>
 
-<h1>Hello, I am Olawale Oyeyipo</h1>
+<h1>Hey 👨‍💻, I am Olawale Oyeyipo</h1>
