@@ -2,7 +2,7 @@
   export let segment;
 </script>
 
-<style>
+<style lang="scss">
   .header {
     background-color: bisque;
     border-bottom: 1px solid hsla(225, 0%, 0%, 0.2);
@@ -11,6 +11,10 @@
 
     display: flex;
     align-items: center;
+
+    & .logo-box {
+      background-color: green;
+    }
   }
 
   ul {
@@ -18,10 +22,10 @@
     display: grid;
     grid-auto-flow: column;
     column-gap: 1rem;
-  }
 
-  li {
-    font-weight: bold;
+    li {
+      font-weight: bold;
+    }
   }
 
   a {
@@ -34,9 +38,7 @@
 </style>
 
 <header class="header">
-  <div class="logo-box">
-    <a href="/">Oyeyipo Olawale</a>
-  </div>
+  <div class="logo-box"><a href="/">Oyeyipo Olawale</a></div>
 
   <nav>
     <ul>
@@ -63,5 +65,4 @@
       </li>
     </ul>
   </nav>
-
 </header>

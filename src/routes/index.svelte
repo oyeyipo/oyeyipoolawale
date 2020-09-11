@@ -1,5 +1,9 @@
-<style>
-
+<style lang="scss">
+  @import "../../static/scss/variables.scss";
+  h1 {
+    color: $pry-col;
+    color: var(--col);
+  }
 </style>
 
 <svelte:head>
