@@ -42,12 +42,12 @@
     <ul>
       <li>
         <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-          🏠 home
+          home
         </a>
       </li>
       <li>
         <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
-          🙋‍♂️ about
+          about
         </a>
       </li>
 
@@ -58,7 +58,7 @@
           rel="prefetch"
           aria-current={segment === 'blog' ? 'page' : undefined}
           href="blog">
-          📰 blog
+          blog
         </a>
       </li>
     </ul>
