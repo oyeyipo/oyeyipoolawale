@@ -1,8 +1,11 @@
 <style lang="scss">
-  @import "../../static/scss/variables.scss";
   h1 {
     color: $pry-col;
-    color: var(--col);
+    // color: var(--col);
+  }
+
+  p {
+    background-color: $bg-color;
   }
 </style>
 

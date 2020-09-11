@@ -37,6 +37,18 @@
   }
 </style>
 
+<!--
+ @component
+ Here's some documentation for this component. It will show up on hover for
+ JavaScript/TypeScript projects using a LSP-compatible editor such as VSCode or
+ Vim/Neovim with coc.nvim.
+
+ - You can use markdown here.
+ - You can use code blocks here.
+ - JSDoc/TSDoc will be respected by LSP-compatible editors.
+ - Indentation will be respected as much as possible.
+-->
+
 <header class="header">
   <div class="logo-box"><a href="/">Oyeyipo Olawale</a></div>
 
