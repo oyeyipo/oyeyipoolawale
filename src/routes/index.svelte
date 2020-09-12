@@ -1,12 +1,4 @@
 <style lang="scss">
-  h1 {
-    color: $pry-col;
-    // color: var(--col);
-  }
-
-  p {
-    background-color: $bg-color;
-  }
 </style>
 
 <svelte:head>

@@ -8,13 +8,11 @@
     border-bottom: 1px solid hsla(225, 0%, 0%, 0.2);
     height: 7rem;
     width: 100%;
+    padding: 0 2rem;
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
-
-    & .logo-box {
-      background-color: green;
-    }
   }
 
   ul {
