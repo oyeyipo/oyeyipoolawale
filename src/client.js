@@ -5,5 +5,5 @@ sapper
     target: document.querySelector("#olawale"),
   })
   .then(() => {
-    console.log("olawale svelte app has started");
+    console.log("olawale svelte/sapper app has started");
   });
