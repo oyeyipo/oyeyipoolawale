@@ -1,0 +1,1 @@
+const { onMount } = require("svelte");

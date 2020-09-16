@@ -1,8 +1,12 @@
+<script>
+  import Title from "../components/Title.svelte";
+</script>
+
 <style lang="scss">
 </style>
 
 <svelte:head>
-  <title>Oyeyipo Olawale | Software Developer</title>
+  <Title>Home</Title>
 </svelte:head>
 
 <h1>Hey, I'm Olawale Oyeyipo 👨‍💻_</h1>
