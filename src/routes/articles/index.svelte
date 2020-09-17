@@ -2,9 +2,6 @@
   import Title from "../../components/Title.svelte";
 </script>
 
-<style>
-</style>
-
 <svelte:head>
   <Title>Articles. Read and enjoy. Don't forget to leave a comment.</Title>
 </svelte:head>
