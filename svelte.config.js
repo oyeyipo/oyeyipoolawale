@@ -7,7 +7,7 @@ function createPreprocessors(sourceMap) {
       style: "scss",
     },
     scss: {
-      prependData: `@import 'static/scss/variables.scss';`,
+      prependData: `@import 'src/styles/variables.scss';`,
     },
     postcss: {
       plugins: [require("autoprefixer")()],

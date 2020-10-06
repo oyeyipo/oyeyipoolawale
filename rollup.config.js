@@ -7,9 +7,6 @@ import { terser } from "rollup-plugin-terser";
 import config from "sapper/config/rollup.js";
 import pkg from "./package.json";
 
-// import sveltePreprocess from "svelte-preprocess";
-// import { createPreprocessors } from "./svelte.config";
-
 const createPreprocessors = require("./svelte.config").createPreprocessors;
 
 const mode = process.env.NODE_ENV;

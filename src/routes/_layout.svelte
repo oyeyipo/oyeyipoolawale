@@ -5,13 +5,11 @@
   //   export let segment;
 </script>
 
-<style>
+<style lang="scss" global>
+  @import "../styles/global.scss";
 </style>
 
 <!-- <Nav {segment} /> -->
-
-<h1>Hwllo Layout</h1>
-
 <main>
   <slot />
 </main>
