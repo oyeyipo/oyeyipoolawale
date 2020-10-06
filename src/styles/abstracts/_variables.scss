@@ -69,13 +69,16 @@
 
   // Line Height
   --default-line-height: 1.6;
+  --line-height-sm: 1.4;
+  --line-height-xs: 1.2;
+  --line-height: 1;
 
   // Font Size
   --default-font-size: var(--ss-rem-7);
 
-  // Font wieght:
-  --font-wieght-1: 400;
-  --font-wieght-2: 500;
-  --font-wieght-3: 600;
-  --font-wieght-4: 700;
+  // Font weight:
+  --font-weight-1: 400;
+  --font-weight-2: 500;
+  --font-weight-3: 600;
+  --font-weight-4: 700;
 }

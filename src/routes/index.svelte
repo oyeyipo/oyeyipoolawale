@@ -5,26 +5,27 @@
 
 <style lang="scss">
   h1 {
-    line-height: 1;
+    line-height: var(--line-height-sm);
 
     > span {
       display: block;
     }
 
-    .first {
+    .sub {
       font-size: var(--ss-rem-7);
       color: var(--color-primary-300);
     }
     .main {
-      font-size: var(--ss-rem-8);
+      font-size: var(--ss-rem-9);
     }
   }
   p {
     text-transform: capitalize;
-    font-size: var(--ss-rem-5);
+    font-size: var(--ss-rem-6);
+    font-weight: var(--font-weight-3);
   }
 
-  .jumbotron {
+  .header {
     background-color: var(--color-primary-100);
     padding: var(--ss-rem-6);
     width: 100%;
@@ -38,12 +39,12 @@
   <Title>Home</Title>
 </svelte:head>
 
-<div class="jumbotron">
+<header class="header">
   <h1>
-    <span class="first">Hi, </span>
-    <span class="main">I'm Olawale Oyeyipo</span>
+    <span class="sub">Hi, </span>
+    <span class="main">I'm Wale Oyeyipo</span>
   </h1>
-  <p>Software Developer/Writer who loves to solve problems and teach.</p>
+  <p>Software Developer/Writer that loves to solve problems and teach.</p>
 
   <Social />
-</div>
+</header>
