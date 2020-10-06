@@ -7,6 +7,11 @@
 
 <style lang="scss" global>
   @import "../styles/global.scss";
+
+  main {
+    display: grid;
+    place-items: center;
+  }
 </style>
 
 <!-- <Nav {segment} /> -->

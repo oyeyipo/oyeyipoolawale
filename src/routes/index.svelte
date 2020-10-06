@@ -3,14 +3,9 @@
 </script>
 
 <style lang="scss">
-  .container {
-    display: grid;
-    place-items: center;
-  }
-
   h1 {
-    color: $col;
-    background-color: $primary-color;
+    color: var(--col);
+    background-color: var(--col2);
   }
 </style>
 
@@ -18,8 +13,7 @@
   <Title>Home</Title>
 </svelte:head>
 
-<div class="container">
+<div>
   <h1>Hey, I'm Olawale Oyeyipo 👨‍💻_</h1>
-
   <p>Software Developer/Writer who loves to solve problems and teach.</p>
 </div>
