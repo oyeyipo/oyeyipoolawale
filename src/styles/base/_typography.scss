@@ -6,3 +6,26 @@ body {
   font-size: var(--default-font-size);
   color: var(--color-primary-800);
 }
+
+%heading {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+  color: blue;
+}
+
+.heading-2 {
+  @extend %heading;
+}
+
+.heading-3 {
+  @extend %heading;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: var(--ss-rem-5);
+}

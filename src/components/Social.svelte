@@ -3,13 +3,10 @@
 </script>
 
 <style lang="scss">
-  .title {
-    font-size: var(--ss-rem-5);
-  }
   svg {
-    width: var(--ss-rem-7);
-    height: var(--ss-rem-7);
-    fill: var(--color-primary-700);
+    width: var(--ss-rem-8);
+    height: var(--ss-rem-8);
+    fill: var(--color-primary-800);
   }
 
   .social {
@@ -17,11 +14,15 @@
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
-    gap: var(--ss-rem-7);
+    gap: var(--ss-rem-8);
+  }
+
+  a {
+    display: block;
   }
 </style>
 
-<div class="title">Connect</div>
+<!-- <h3 class="title heading-4">Social</h3> -->
 <div class="social">
   <a
     href="https://www.linkedin.com/in/olawale-oyeyipo-7a5b36b7/"
