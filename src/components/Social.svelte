@@ -7,8 +7,8 @@
     font-size: var(--ss-rem-5);
   }
   svg {
-    width: var(--ss-rem-6);
-    height: var(--ss-rem-6);
+    width: var(--ss-rem-7);
+    height: var(--ss-rem-7);
     fill: var(--color-primary-700);
   }
 
@@ -17,7 +17,7 @@
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
-    gap: var(--ss-rem-5);
+    gap: var(--ss-rem-7);
   }
 </style>
 
