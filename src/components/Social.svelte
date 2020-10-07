@@ -23,17 +23,26 @@
 
 <div class="title">Connect</div>
 <div class="social">
-  <a href="#" rel="external" target="_blank">
+  <a
+    href="https://www.linkedin.com/in/olawale-oyeyipo-7a5b36b7/"
+    rel="external noopener noreferrer"
+    target="_blank">
     <svg>
       <use xlink:href="sprite.svg#icon-linkedin" />
     </svg>
   </a>
-  <a href="#" rel="external" target="_blank">
+  <a
+    href="https://stackoverflow.com/users/7024331/oyeyipowale"
+    rel="external noopener noreferrer"
+    target="_blank">
     <svg>
       <use xlink:href="sprite.svg#icon-stackoverflow" />
     </svg>
   </a>
-  <a href="#" rel="external" target="_blank">
+  <a
+    href="https://github.com/oyeyipowale"
+    rel="external noopener noreferrer"
+    target="_blank">
     <svg>
       <use xlink:href="sprite.svg#icon-github" />
     </svg>
