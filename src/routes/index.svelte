@@ -25,12 +25,16 @@
     font-weight: var(--font-weight-3);
   }
 
-  .header {
+  .jumbotron {
     background-color: var(--color-primary-100);
     padding: var(--ss-rem-6);
     width: 100%;
 
+    grid-column: full-start / full-end;
+
     display: grid;
+    align-items: center;
+    justify-items: start;
     row-gap: var(--ss-rem-4);
   }
 </style>
@@ -39,7 +43,7 @@
   <Title>Home</Title>
 </svelte:head>
 
-<header class="header">
+<div class="jumbotron">
   <h1>
     <span class="sub">Hi, </span>
     <span class="main">I'm Wale Oyeyipo</span>
@@ -47,4 +51,4 @@
   <p>Software Developer/Writer that loves to solve problems and teach.</p>
 
   <Social />
-</header>
+</div>

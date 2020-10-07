@@ -10,6 +10,4 @@
 </style>
 
 <!-- <Nav {segment} /> -->
-<main>
-  <slot />
-</main>
+<slot />
