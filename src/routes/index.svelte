@@ -1,10 +1,10 @@
 <script context="module">
-  //   import { baseUrl } from "./_common/conf.js";
+  import { baseUrl } from "./_common/conf.js";
 
   export async function preload(page, session) {
-    // console.log(baseUrl);
+    // console.log(`${baseUrl}/api/posts/`);
 
-    const response = await this.fetch(`http://localhost:8000/api/posts/`, {
+    const response = await this.fetch(`${baseUrl}/api/posts/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
