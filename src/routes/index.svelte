@@ -2,8 +2,6 @@
   import { baseUrl } from "./_common/conf.js";
 
   export async function preload(page, session) {
-    // console.log(`${baseUrl}/api/posts/`);
-
     const response = await this.fetch(`${baseUrl}/api/posts/`, {
       method: "GET",
       headers: {
