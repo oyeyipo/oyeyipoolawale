@@ -1,7 +1,31 @@
+<script context="module">
+  export async function preload(page, session) {
+    const response = await this.fetch(`http://localhost:8000/api/posts/`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+
+    const articles = await response.json();
+
+    if (articles.error) {
+      return this.error(response.status, articles.error);
+    }
+
+    return {
+      articles,
+    };
+  }
+</script>
+
 <script>
   import Title from "../components/Title.svelte";
   import Social from "../components/Social.svelte";
   import Articles from "../components/Articles.svelte";
+
+  export let articles;
 </script>
 
 <style lang="scss">
@@ -55,4 +79,4 @@
   <Social />
 </div>
 
-<Articles />
+<Articles {articles} />

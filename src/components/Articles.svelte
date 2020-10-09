@@ -1,4 +1,8 @@
+<!--<script context="module" ✂prettier:content✂="CiAgZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHByZWxvYWQocGFnZSwgc2Vzc2lvbikgewogICAgY29uc3QgcmVzdWx0c2VydmVyID0gYXdhaXQgdGhpcy5mZXRjaChgcG9zdHMuanNvbmApOwogICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCB0aGlzLmZldGNoKGBodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Bvc3RzL2AsIHsKICAgICAgbWV0aG9kOiAiR0VUIiwKICAgICAgaGVhZGVyczogewogICAgICAgICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbiIsCiAgICAgICAgQWNjZXB0OiAiYXBwbGljYXRpb24vanNvbiIsCiAgICAgIH0sCiAgICB9KTsKCiAgICBjb25zdCBwYXJzZWQgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7CgogICAgaWYgKHBhcnNlZC5lcnJvcikgewogICAgICByZXR1cm4gdGhpcy5lcnJvcihyZXNwb25zZS5zdGF0dXMsIHBhcnNlZC5lcnJvcik7CiAgICB9CgogICAgcmV0dXJuIHsKICAgICAgYXJ0aWNsZXM6IHBhcnNlZCwKICAgIH07CiAgfQo=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script>-->
 <script>
+  export let articles;
+
+  $: items = articles.results;
 </script>
 
 <style lang="scss">
@@ -25,7 +29,7 @@
 
   .list {
     display: grid;
-    row-gap: var(--ss-rem-6);
+    row-gap: var(--ss-rem-8);
     list-style: none;
   }
 </style>
@@ -35,17 +39,19 @@
   <h3>Blog</h3>
   <!-- Article list -->
   <ul class="list">
-    <li>
-        <h4>Python: deconstructing dict() of the standard library</h4>
-    </li>
-    <li>
-        <h4>Reading C++ code from python</h4>
-    </li>
-    <li>
-        <h4>Submit your first pull request: actual guide</h4>
-    </li>
-    <li>
-        <h4>Lifecycle of pyQT application</h4>
-    </li>
+      {#if items}
+          {#each items as post}
+            <li>
+                <a href="#">
+                    <h4>{post.title}</h4>
+                </a>
+            </li>
+          {/each}
+      {/if}
 </ul>
+
+  <!-- <h5>Articles</h5>
+  <pre>
+    {JSON.stringify(items, null, 2)}
+</pre> -->
 </div>
