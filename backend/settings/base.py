@@ -70,6 +70,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
+# ADMIN
+# ------------------------------------------------------------------------------
+# Django Admin URL.
+ADMIN_URL = "admin/"
+# https://docs.djangoproject.com/en/dev/ref/settings/#admins
+# ADMINS = [("""Oyeyipo Olawale""", "olaclassik@gmail.com")]
+# https://docs.djangoproject.com/en/dev/ref/settings/#managers
+# MANAGERS = ADMINS
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
