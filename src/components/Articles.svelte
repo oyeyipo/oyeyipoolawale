@@ -48,7 +48,6 @@
           {/each}
       {/if}
     </ul>
-  <p>Delete</p>
   <!-- <h5>Articles</h5>
   <pre>
     {JSON.stringify(items, null, 2)}
