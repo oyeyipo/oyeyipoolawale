@@ -26,10 +26,24 @@
     line-height: var(--line-height);
   }
 
-  .list {
+  ul {
     display: grid;
     row-gap: var(--ss-rem-8);
     list-style: none;
+  }
+
+  a {
+    &:link,
+    &:visited {
+      color: var(--color-primary-700);
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+      color: currentColor;
+    }
   }
 </style>
 
@@ -37,19 +51,15 @@
   <!-- Heading -->
   <h3>Blog</h3>
   <!-- Article list -->
-  <ul class="list">
+  <ul>
       {#if items}
           {#each items as post}
             <li>
-                <a href="#">
+                <a href="/">
                     <h4>{post.title}</h4>
                 </a>
             </li>
           {/each}
       {/if}
     </ul>
-  <!-- <h5>Articles</h5>
-  <pre>
-    {JSON.stringify(items, null, 2)}
-</pre> -->
 </div>
