@@ -10,5 +10,9 @@ class PostViewSet(viewsets.ModelViewSet):
     API endpoint that allows Posts to be viewed or edited.
     """
 
+    # TODO: convert to regular APIView class for permission
+    # sake
+
     queryset = Post.objects.all()
     serializer_class = PostListSerializer
+    permission_class = [permissions.IsAuthenticatedOrReadOnly]
