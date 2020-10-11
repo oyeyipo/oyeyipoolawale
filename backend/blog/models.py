@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils.text import slugify
 
+import random, string
+
 from backend.core.models import TimestampedModel
 
 
@@ -13,21 +15,22 @@ class Post(TimestampedModel):
         return self.title
 
     def save(self, *args, **kwargs):
-        print("In save method")
         self.slug = create_slug(self)
         super().save(*args, **kwargs)
 
 
 def create_slug(instance, new_slug=None):
-    print("In create_slug")
     slug = slugify(instance.title)
     if new_slug is not None:
         slug = new_slug
     queryset = Post.objects.filter(slug=slug).order_by("-id")
     exists = queryset.exists()
     if exists:
-        new_slug = f"{slug}-{queryset.first().id}"
-        print("In create_slug exists")
+        new_slug = f"{slug}-{random_word()}"
         return create_slug(instance, new_slug=new_slug)
-    print("In create_slug new")
     return slug
+
+
+def random_word(length=5):
+    letters = string.ascii_letters
+    return "".join(random.choice(letters) for _ in range(length))
