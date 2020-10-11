@@ -17,9 +17,9 @@
   h3 {
     display: inline-block;
     padding: 0 0.6rem;
-    box-shadow: 0.5rem 0.5rem 0 0 var(--color-primary-900);
-    background-color: var(--color-primary-200);
-    color: var(--color-primary-800);
+    // box-shadow: 0.5rem 0.5rem 0 0 var(--color-primary-900);
+    background-color: var(--color-primary-900);
+    color: var(--color-primary-100);
   }
 
   h4 {
@@ -48,11 +48,11 @@
 </style>
 
 <div class="wrapper">
-  <!-- Heading -->
-  <h3>Blog</h3>
-  <!-- Article list -->
-  <ul>
-      {#if items}
+  {#if items}
+    <!-- Heading -->
+    <h3>Blog</h3>
+    <!-- Article list -->
+    <ul>
           {#each items as post}
             <li>
                 <a href="/">
@@ -60,6 +60,6 @@
                 </a>
             </li>
           {/each}
-      {/if}
-    </ul>
+        </ul>
+  {/if}
 </div>

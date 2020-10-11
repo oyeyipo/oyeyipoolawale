@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import permissions, viewsets
 
 from .models import Post
-from .serializers import PostSerializer
+from .serializers import PostListSerializer
 
 
 class PostViewSet(viewsets.ModelViewSet):
@@ -11,4 +11,4 @@ class PostViewSet(viewsets.ModelViewSet):
     """
 
     queryset = Post.objects.all()
-    serializer_class = PostSerializer
+    serializer_class = PostListSerializer
