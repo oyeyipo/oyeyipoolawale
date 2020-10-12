@@ -18,4 +18,4 @@ ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
 
 # Application definition
 # ======================
-INSTALLED_APPS = [] + INSTALLED_APPS  # "whitenoise.runserver_nostatic"
+INSTALLED_APPS = ["whitenoise.runserver_nostatic"] + INSTALLED_APPS
