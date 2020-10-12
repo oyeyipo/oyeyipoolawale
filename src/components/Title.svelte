@@ -1,4 +1,4 @@
 <title>
   <slot>Hello</slot>
-  | Wale Oyeyipo (Software Developer/Writer)
+  | Wale Oyeyipo (Software Engineer/Writer)
 </title>

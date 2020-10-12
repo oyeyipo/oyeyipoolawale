@@ -76,7 +76,7 @@
       <span class="sub">Hi, I am</span>
       <span class="main">Wale Oyeyipo</span>
     </h1>
-    <p>Software Developer/Writer that loves to solve problems and teach.</p>
+    <p>Software Engineer/Writer who loves to solve problems and teach.</p>
   </div>
   <Social />
 </div>
