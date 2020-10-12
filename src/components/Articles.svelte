@@ -58,7 +58,7 @@
     <ul>
           {#each items as post}
             <li>
-                <a href="/">
+                <a href="blog/{post.slug}">
                     <h4>{post.title}</h4>
                 </a>
             </li>

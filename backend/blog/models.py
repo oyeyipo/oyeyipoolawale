@@ -1,7 +1,9 @@
-from django.db import models
-from django.utils.text import slugify
+import random
+import string
 
-import random, string
+from django.db import models
+from django.urls import reverse
+from django.utils.text import slugify
 
 from backend.core.models import TimestampedModel
 
@@ -17,6 +19,9 @@ class Post(TimestampedModel):
     def save(self, *args, **kwargs):
         self.slug = create_slug(self)
         super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse("api:blog:detail", kwargs={"slug": self.slug})
 
 
 def create_slug(instance, new_slug=None):
