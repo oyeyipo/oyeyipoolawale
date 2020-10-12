@@ -11,6 +11,7 @@ urlpatterns = [
 ]
 
 if settings.DEBUG:
+    # print("\n\n\n", staticfiles_urlpatterns(), "\n\n\n")
     urlpatterns += staticfiles_urlpatterns()
 
 

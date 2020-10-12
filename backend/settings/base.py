@@ -132,10 +132,12 @@ STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "staticfiles")
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_URL = "/media/"
+
+
 # Django Rest Framework setup
+# --------------------------------------------
 REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
@@ -146,6 +148,7 @@ REST_FRAMEWORK = {
 
 
 # LOGGING
+# --------------------------------------------
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
