@@ -30,7 +30,7 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-THIRD_PARTY_APP = ["rest_framework"]
+THIRD_PARTY_APP = ["rest_framework", "corsheaders"]
 
 LOCAL_APP = [
     "backend.blog",
@@ -43,6 +43,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -134,6 +135,18 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 MEDIA_URL = "/media/"
+
+# CORS HEADERS
+# --------------------------------------------
+CORS_ORIGIN_ALLOW_ALL = True
+
+# CORS_ORIGIN_WHITELIST = [
+#     "https://example.com",
+#     "https://sub.example.com",
+#     "http://localhost:8080",
+#     "http://localhost:3000",
+#     "http://127.0.0.1:9000",
+# ]
 
 
 # Django Rest Framework setup

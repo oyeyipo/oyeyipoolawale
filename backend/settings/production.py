@@ -27,6 +27,16 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Django Admin URL regex.
 ADMIN_URL = env("DJANGO_ADMIN_URL")
 
+
+# CORS HEADERS
+# ------------------------------------------------------------------------------
+# Django Admin URL regex.
+
+CORS_ORIGIN_WHITELIST = [
+    "https://oyeyipoolawale.ga",
+]
+
+
 # LOGGING
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#logging
