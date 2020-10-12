@@ -1,7 +1,10 @@
 <script>
   export let articles;
 
-  $: items = articles.results;
+  let articleList = articles.results;
+  const isEmpty = articleList == undefined || articleList.length == 0;
+
+  $: items = articleList;
 </script>
 
 <style lang="scss">
@@ -48,7 +51,7 @@
 </style>
 
 <div class="wrapper">
-  {#if items}
+  {#if !isEmpty}
     <!-- Heading -->
     <h3>Blog</h3>
     <!-- Article list -->
