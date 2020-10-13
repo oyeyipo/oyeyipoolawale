@@ -16,7 +16,7 @@ class PostList(generics.ListAPIView):
     lookup_field = "slug"
 
 
-class PostDetail(generics.ListAPIView):
+class PostDetail(generics.RetrieveAPIView):
     """
     API endpoint that allows Posts to be viewed or edited.
     """

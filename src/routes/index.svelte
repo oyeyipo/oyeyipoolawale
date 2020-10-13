@@ -1,5 +1,5 @@
 <script context="module">
-  import { baseUrl } from "./_common/conf.js";
+  import { baseUrl } from "./_common/conf";
 
   export async function preload(page, session) {
     const response = await this.fetch(`${baseUrl}/api/posts/`, {
