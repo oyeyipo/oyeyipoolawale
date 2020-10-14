@@ -30,7 +30,7 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-THIRD_PARTY_APP = ["rest_framework", "corsheaders"]
+THIRD_PARTY_APP = ["rest_framework", "corsheaders", "ckeditor"]
 
 LOCAL_APP = [
     "backend.blog",
