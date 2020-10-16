@@ -8,9 +8,21 @@ from django.utils.text import slugify
 from backend.core.models import TimestampedModel
 
 
+def upload_location(instance, filename):
+    return f"post/{instance.slug}/{filename}"
+
+
 class Post(TimestampedModel):
     title = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)
+    cover_img = models.ImageField(
+        blank=True,
+        height_field="height_img",
+        width_field="width_img",
+        upload_to=upload_location,
+    )
+    height_img = models.IntegerField(default=0)
+    width_img = models.IntegerField(default=0)
     content = models.TextField()
 
     def __str__(self):
