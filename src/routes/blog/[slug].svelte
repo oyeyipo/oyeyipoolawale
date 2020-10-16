@@ -21,6 +21,11 @@
   article {
     grid-column: center-start / center-end;
   }
+
+  img {
+    display: inline-block;
+    width: 100%;
+  }
 </style>
 
 <svelte:head>
@@ -28,6 +33,9 @@
 </svelte:head>
 
 <article>
+  {#if article.cover_img}
+    <img src={article.cover_img} alt={article.title} />
+  {/if}
   <h1>{article.title}</h1>
   <small>Published on {article.updated_at}</small>
   <p>{article.content}</p>
