@@ -29,6 +29,6 @@
 
 <article>
   <h1>{article.title}</h1>
-  <small>{article.updated_at}</small>
+  <small>Published on {article.updated_at}</small>
   <p>{article.content}</p>
 </article>
