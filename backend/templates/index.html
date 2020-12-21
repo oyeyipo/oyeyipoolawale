@@ -12,20 +12,30 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
     <link rel="manifest" href="{% static 'site.webmanifest' %}">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: beige;
+            height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>
-        Hello from template
-    </h1>
+        Nothing to see here. Please Goto to the <a href="{% url 'admin:index' %}">Admin</a> page.</h1>
 
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptate autem inventore amet, quo minima
-        natus maiores pariatur repellendus earum consectetur cupiditate laboriosam voluptatibus ipsam cumque deleniti
-        doloribus repudiandae. Voluptatem?
-    </p>
-    <div class=""><a href="{% url 'admin:index' %}">Goto Admin &rarr;</a></div>
 </body>
 
 
