@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to olawale's blog!!!</h1>
+        <h1 className={styles.title}>Oyeyipo Olawale</h1>
       </main>
     </div>
   );
