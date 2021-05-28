@@ -11,6 +11,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Oyeyipo Olawale</h1>
+        <span>Software programmer | Loves open source</span>
       </main>
     </div>
   );
