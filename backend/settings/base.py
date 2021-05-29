@@ -35,6 +35,7 @@ THIRD_PARTY_APP = ["rest_framework", "corsheaders", "ckeditor"]
 LOCAL_APP = [
     "backend.blog",
     "backend.core",
+    "tests",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APP + LOCAL_APP
@@ -133,7 +134,7 @@ STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "staticfiles"),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "assets"),)
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
