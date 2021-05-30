@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styled, { css, createGlobalStyle } from "styled-components";
+import styled, { css } from "styled-components";
 
 export default function Home() {
   return (
@@ -16,9 +16,6 @@ export default function Home() {
       <main>
         <section id="blog-posts">
           <h2>Blog posts</h2>
-
-          <Button>I am Ola!</Button>
-          <Button primary>primary button</Button>
         </section>
       </main>
     </>
