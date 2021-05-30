@@ -1,23 +1,43 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styled, { css, createGlobalStyle } from "styled-components";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Oyeyipo Olawale - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <h1 className={styles.title}>Oyeyipo Olawale</h1>
-        <span>Software programmer | Loves open source</span>
+        <h1>Oyeyipo Olawale</h1>
+        <h2>Software programmer | Loves open source</h2>
       </header>
 
-      <main className={styles.main}>
+      <main>
         <section id="blog-posts">
           <h2>Blog posts</h2>
+
+          <Button>I am Ola!</Button>
+          <Button primary>primary button</Button>
         </section>
       </main>
-    </div>
+    </>
   );
 }
+
+// STYLINGS
+const Button = styled.button`
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+
+  ${(props) =>
+    props.primary &&
+    css`
+      background-color: palevioletred;
+      color: white;
+    `}
+`;
