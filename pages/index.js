@@ -8,10 +8,15 @@ export default function Home() {
         <title>Oyeyipo Olawale - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
+      <header>
         <h1 className={styles.title}>Oyeyipo Olawale</h1>
         <span>Software programmer | Loves open source</span>
+      </header>
+
+      <main className={styles.main}>
+        <section id="blog-posts">
+          <h2>Blog posts</h2>
+        </section>
       </main>
     </div>
   );
