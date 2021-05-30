@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <header>
         <h1>Oyeyipo Olawale</h1>
-        <h2>Software programmer | Loves open source</h2>
+        <h2>Software engineer & open sourcerer</h2>
       </header>
 
       <main>
