@@ -10,23 +10,35 @@ function MyApp({ Component, pageProps }) {
 }
 
 const GlobalStleAndResets = createGlobalStyle`
-html,
-body {
-  padding: 0;
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 1px, 10px/16px = 62.5%
+
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #999999;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+::selection {
+  background-color: green;
+  color: yellow;
 }
-
-* {
-  box-sizing: border-box;
-}
-
 
 .code {
   background: #fafafa;
@@ -35,6 +47,13 @@ a {
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+a {
+  vertical-align: baseline;
+  background: transparent;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  text-decoration-thickness: 0.1em;
 }
 
 `;
