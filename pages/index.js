@@ -13,7 +13,7 @@ export default function Home() {
       <Header>
         <div>
           <Avatar>
-            <img src="/avatar.png" />
+            <img src="/avatar.png" alt="Oyeyipo Olawale' avatar" />
           </Avatar>
           <h1>Oyeyipo Olawale</h1>
           <h2>Software engineer & open sourcerer</h2>
