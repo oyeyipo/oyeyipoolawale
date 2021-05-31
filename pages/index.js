@@ -8,10 +8,12 @@ export default function Home() {
         <title>Oyeyipo Olawale - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <StyledBackground>&nbsp;</StyledBackground>
       <Header>
         <div>
           <Avatar>
-            <img />
+            <img src="/avatar.png" />
           </Avatar>
           <h1>Oyeyipo Olawale</h1>
           <h2>Software engineer & open sourcerer</h2>
@@ -32,53 +34,64 @@ export default function Home() {
 }
 
 // STYLINGS
-const Button = styled.button`
-  background: transparent;
-  border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
-  margin: 0 1em;
-  padding: 0.25em 1em;
+// const Button = styled.button`
+//   background: transparent;
+//   border-radius: 3px;
+//   border: 2px solid palevioletred;
+//   color: palevioletred;
+//   margin: 0 1em;
+//   padding: 0.25em 1em;
 
-  ${(props) =>
-    props.primary &&
-    css`
-      background-color: palevioletred;
-      color: white;
-    `}
+//   ${(props) =>
+//     props.primary &&
+//     css`
+//       background-color: palevioletred;
+//       color: white;
+//     `}
+// `;
+
+const StyledBackground = styled.div`
+  width: 100%;
+  height: var(--ssr-xxx-xxlarge);
+  background-color: #2c3e50;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 `;
 
 const Header = styled.header`
-  height: 40rem;
-  background-color: #2c3e50;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  width: 100vw;
+  margin-top: var(--ssr-xx-xlarge);
+  position: absolute;
+  top: 0;
+  left: 0;
 
   display: grid;
   place-content: center;
   justify-items: center;
 
   div {
-    display: block;
     text-align: center;
-    width: 45rem;
+    width: var(--ssr-xxx-xxlarge);
     z-index: 1;
   }
 
   h1 {
     color: ${(props) => props.theme.color.clouds};
-    font-size: 3.5rem;
-    letter-spacing: 0.2rem;
+    font-size: var(--ssr-xxx-large);
+    letter-spacing: var(--letter-spacing-sm);
+    font-weight: ${(props) => props.theme.fontWeight.normal};
   }
 
   h2 {
     color: ${(props) => props.theme.color.turquoise};
-    font-size: 2rem;
+    font-size: var(--ssr-large);
+    letter-spacing: var(--letter-spacing-lg);
+    font-weight: ${(props) => props.theme.fontWeight.bold};
   }
 
   p {
     color: ${(props) => props.theme.color.silver};
-    margin-top: 0.5rem;
-    font-weight: ${(props) => props.theme.fontWeight[1]};
+    margin-top: var(--ssr-xx-small);
+    font-weight: ${(props) => props.theme.fontWeight.bold};
   }
 `;
 
