@@ -21,10 +21,10 @@ class ReadersTest(FunctionalTest):
         # He notices that the was a list of blog posts titles on the homepage too
         # under the title "Blog Posts" that Oyeyipo has recently written
         blog_section = self.browser.find_element_by_css_selector("section#blog-posts")
-        blog_header = blog_section.find_element_by_tag_name("h2").text
+        blog_header = blog_section.find_element_by_tag_name("h3").text
 
         ## saw the blog posts section header
-        self.assertEqual("Blog posts", blog_header)
+        self.assertEqual("Recent articles", blog_header)
 
         ## The list of blog posts
         blog_posts = blog_section.find_elements_by_tag_name("li")

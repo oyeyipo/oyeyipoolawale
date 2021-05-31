@@ -16,7 +16,7 @@ export default function Home() {
             <img src="/avatar.png" alt="Oyeyipo Olawale' avatar" />
           </Avatar>
           <h1>Oyeyipo Olawale</h1>
-          <h2>Software engineer & Open Sourcerer</h2>
+          <h2>Full-Stack Software Programmer</h2>
           <p>
             I build and create quality software. Mostly for the web and
             sometimes mobile apps. I like contributing to Open Source Softwares
@@ -66,6 +66,7 @@ const Header = styled.header`
     font-size: var(--ssr-xxx-large);
     letter-spacing: var(--letter-spacing-sm);
     font-weight: ${(props) => props.theme.fontWeight.normal};
+    line-height: 1.3;
   }
 
   h2 {
