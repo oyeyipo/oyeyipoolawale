@@ -58,7 +58,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #777;
+  color: ${(props) => props.theme.color.wetAsphalt};
   line-height: 1.6;
   font-weight: ${(props) => props.theme.fontWeight.normal};
   font-size: 1.6rem;

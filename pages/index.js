@@ -16,40 +16,27 @@ export default function Home() {
             <img src="/avatar.png" alt="Oyeyipo Olawale' avatar" />
           </Avatar>
           <h1>Oyeyipo Olawale</h1>
-          <h2>Software engineer & open sourcerer</h2>
+          <h2>Software engineer & Open Sourcerer</h2>
           <p>
-            I build and create quality softwares. Mostly for the web and
-            sometimes mobile apps.
+            I build and create quality software. Mostly for the web and
+            sometimes mobile apps. I like contributing to Open Source Softwares
+            and writing about newfound knowledge.
           </p>
         </div>
       </Header>
 
-      <main>
-        <section id="blog-posts">
-          <h2>Blog posts</h2>
-        </section>
-      </main>
+      <StyledMain>
+        <SectionBlog id="blog-posts">
+          <SectionContentWrapper>
+            <SectionTitle>Recent articles</SectionTitle>
+          </SectionContentWrapper>
+        </SectionBlog>
+      </StyledMain>
     </>
   );
 }
 
 // STYLINGS
-// const Button = styled.button`
-//   background: transparent;
-//   border-radius: 3px;
-//   border: 2px solid palevioletred;
-//   color: palevioletred;
-//   margin: 0 1em;
-//   padding: 0.25em 1em;
-
-//   ${(props) =>
-//     props.primary &&
-//     css`
-//       background-color: palevioletred;
-//       color: white;
-//     `}
-// `;
-
 const StyledBackground = styled.div`
   width: 100%;
   height: var(--ssr-xxx-xxlarge);
@@ -96,6 +83,8 @@ const Header = styled.header`
 `;
 
 const Avatar = styled.div`
+  width: 65% !important;
+  margin: 0 auto;
   border-top: 3px solid ${(props) => props.theme.color.turquoise};
 
   img {
@@ -107,4 +96,20 @@ const Avatar = styled.div`
     border: 3px solid ${(props) => props.theme.color.turquoise};
     margin-top: -7rem;
   }
+`;
+
+const StyledMain = styled.main`
+  margin-top: -13rem;
+  padding-top: 13rem;
+`;
+
+const SectionBlog = styled.section`
+  padding: var(--ssr-large);
+`;
+
+const SectionContentWrapper = styled.div``;
+
+const SectionTitle = styled.h3`
+  text-align: center;
+  font-size: var(--ssr-x-large);
 `;
