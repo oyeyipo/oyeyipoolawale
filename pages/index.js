@@ -20,7 +20,8 @@ export default function Home() {
           <p>
             I build and create quality software. Mostly for the web and
             sometimes mobile apps. I like contributing to Open Source Softwares
-            and writing about newfound knowledge.
+            and writing about newfound knowledge in the fields of Software
+            Engineering and Econometrics.
           </p>
         </div>
       </Header>
