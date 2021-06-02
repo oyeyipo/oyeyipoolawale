@@ -42,12 +42,13 @@ const StyledBackground = styled.div`
   width: 100%;
   height: var(--ssr-xxx-xxlarge);
   background-color: #2c3e50;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 `;
 
 const Header = styled.header`
   width: 100vw;
   margin-top: var(--ssr-xx-xlarge);
+  padding: 0 var(--ssr-xx-small);
   position: absolute;
   top: 0;
   left: 0;
@@ -58,13 +59,12 @@ const Header = styled.header`
 
   div {
     text-align: center;
-    width: var(--ssr-xxx-xxlarge);
     z-index: 1;
   }
 
   h1 {
     color: ${(props) => props.theme.color.clouds};
-    font-size: var(--ssr-xxx-large);
+    font-size: var(--ssr-x-large);
     letter-spacing: var(--letter-spacing-sm);
     font-weight: ${(props) => props.theme.fontWeight.normal};
     line-height: 1.3;
@@ -72,7 +72,7 @@ const Header = styled.header`
 
   h2 {
     color: ${(props) => props.theme.color.turquoise};
-    font-size: var(--ssr-large);
+    font-size: var(--ssr-medium);
     letter-spacing: var(--letter-spacing-lg);
     font-weight: ${(props) => props.theme.fontWeight.bold};
   }
@@ -81,11 +81,11 @@ const Header = styled.header`
     color: ${(props) => props.theme.color.silver};
     margin-top: var(--ssr-xx-small);
     font-weight: ${(props) => props.theme.fontWeight.bold};
+    font-size: var(--ssr-small);
   }
 `;
 
 const Avatar = styled.div`
-  width: 65% !important;
   margin: 0 auto;
   border-top: 3px solid ${(props) => props.theme.color.turquoise};
 
@@ -113,5 +113,5 @@ const SectionContentWrapper = styled.div``;
 
 const SectionTitle = styled.h3`
   text-align: center;
-  font-size: var(--ssr-x-large);
+  font-size: var(--ssr-large);
 `;
