@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Oyeyipo Olawale - Software Engineer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Oyeyipo Olawale - Software Programmer</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <StyledBackground>&nbsp;</StyledBackground>
