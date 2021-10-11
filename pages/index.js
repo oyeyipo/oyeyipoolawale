@@ -24,6 +24,28 @@ export default function Home() {
             Engineering, Mathematics, and Statistics.
           </p>
         </div>
+
+        <div>
+          <HeadingTertiary>Social Media</HeadingTertiary>
+
+          <SimpleList>
+            <ListItem>
+              <SocialLink href="https://www.stackoverflow.com/" target="_blank">
+                Stackoverflow
+              </SocialLink>
+            </ListItem>
+            <ListItem>
+              <SocialLink href="https://github.com/oyeyipowale" target="_blank">
+                github
+              </SocialLink>
+            </ListItem>
+            <ListItem>
+              <SocialLink href="https://www.linkedin.com/" target="_blank">
+                LinkedIn
+              </SocialLink>
+            </ListItem>
+          </SimpleList>
+        </div>
       </Header>
 
       <StyledMain>
@@ -44,6 +66,28 @@ const StyledBackground = styled.div`
   background-color: #2c3e50;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 `;
+
+const HeadingTertiary = styled.h3`
+  
+`;
+
+const SimpleList = styled.ul`
+  display: flex;
+
+
+  & > *:not(last-child) {
+    margin: 0 1.5rem;
+  }
+`;
+
+const ListItem = styled.li`
+  list-style: none;
+`;
+
+const SocialLink = styled.a`
+  text-decoration: none;
+`;
+
 
 const Header = styled.header`
   width: 100vw;
